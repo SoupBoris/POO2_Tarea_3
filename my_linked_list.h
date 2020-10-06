@@ -23,6 +23,11 @@ struct Node{
         data = value;
     }
 
+    Node(Node<T>* node){
+        this->next_n = node->next_n;
+        this->data = node->data;
+    }
+
     void killSelf();
 
     Node<T>* next(){
