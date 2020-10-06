@@ -11,14 +11,14 @@ namespace utec{
 template <typename T>
 class Node{
     T data;
-    Node<T>* next;
+    Node<T>* next_n;
 
 public:
 
     void killSelf();
 
-    Node<T>* next_node(){
-        return this->next;
+    Node<T>* next(){
+        return this->next_n;
     }
 
     T value(){
@@ -43,8 +43,8 @@ public:
 
         Node<T>* temp = this->head;
         
-        while(temp->next != nullptr){
-            temp = temp-> next;
+        while(temp->next_n != nullptr){
+            temp = temp-> next_n;
         }
 
         return temp;
@@ -53,25 +53,25 @@ public:
     void push_back(T value) {
         Node<T>* temp = this->head;
 
-        while(temp->next != nullptr){
-            temp = temp->next;
+        while(temp->next_n != nullptr){
+            temp = temp->next_n;
         }
 
         Node<T>* temp2 = new Node<T>(value);
 
-        temp->next = temp2;
+        temp->next_n = temp2;
         }
     
     T pop_back() {
         Node<T>* temp = this->head;
 
-        while(temp->next->next != nullptr){
-            temp = temp->next;
+        while(temp->next_n->next_n != nullptr){
+            temp = temp->next_n;
         }
 
-        T value = temp->next->data;
-        temp->next->killSelf();
-        temp->next = nullptr;
+        T value = temp->next_n->data;
+        temp->next_n->killSelf();
+        temp->next_n = nullptr;
 
         return value;
         }
@@ -89,13 +89,13 @@ public:
             {
             Node<T>* temp = this->head;
             for(int i = 0; i < posicion; i++){
-                temp = temp->next;
+                temp = temp->next_n;
             }
 
             Node<T>* tempNode = new Node<T>(value);
 
-            tempNode->next = temp->next;
-            temp->next = tempNode;
+            tempNode->next_n = temp->next_n;
+            temp->next_n = tempNode;
             }   
         }
 
@@ -128,7 +128,7 @@ public:
         int size = 0;
         while(temp != nullptr){
             size++;
-            temp = temp->next;
+            temp = temp->next_n;
         }
         return size;
     }
