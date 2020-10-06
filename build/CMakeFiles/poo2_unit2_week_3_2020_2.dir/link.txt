@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -g CMakeFiles/poo2_unit2_week_3_2020_2.dir/main.cpp.o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_1.cpp.o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_2.cpp.o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_3.cpp.o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_4.cpp.o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_5.cpp.o -o poo2_unit2_week_3_2020_2 

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit2_week_3_2020_2.dir/main.cpp.o -c /home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/main.cpp",
+  "file": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/main.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_1.cpp.o -c /home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_1.cpp",
+  "file": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_1.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_2.cpp.o -c /home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_2.cpp",
+  "file": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_2.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_3.cpp.o -c /home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_3.cpp",
+  "file": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_3.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_4.cpp.o -c /home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_4.cpp",
+  "file": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_4.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit2_week_3_2020_2.dir/test_5.cpp.o -c /home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_5.cpp",
+  "file": "/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/test_5.cpp"
+}
+]

@@ -1,0 +1,3 @@
+/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build/CMakeFiles/rebuild_cache.dir
+/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build/CMakeFiles/poo2_unit2_week_3_2020_2.dir
+/home/sebastian/projects/Tareas/poo2_unit2_week_3_2020-2_exercise/build/CMakeFiles/edit_cache.dir
