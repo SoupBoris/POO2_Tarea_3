@@ -13,6 +13,18 @@ struct Node{
     T data;
     Node<T>* next_n;
 
+    Node(){ 
+        next = nullptr;
+        prev = nullptr;
+        data = 0;
+    }
+
+    Node(T value){
+        next = nullptr;
+        prev = nullptr;
+        data = value;
+    }
+
     void killSelf();
 
     Node<T>* next(){
