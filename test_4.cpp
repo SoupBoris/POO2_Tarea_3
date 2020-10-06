@@ -12,9 +12,9 @@ TEST_CASE("Insert") {
 
     auto current = ll.first();
     REQUIRE(current->value() == 100.5f);
-    current = current->next_node();
+    current = current->next();
     REQUIRE(current->value() == 200.2f);
-    current = current->next_node();
+    current = current->next();
     REQUIRE(current->value() == 300.6f);
     REQUIRE(ll.size() == 3);
 }

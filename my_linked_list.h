@@ -48,6 +48,10 @@ class linked_list{
 
 public:
 
+    linked_list(){
+        head = nullptr;
+    }
+
     Node<T>* first() {
         return this->head;
         }
@@ -110,7 +114,7 @@ public:
     }
     
     T insert(T value, int posicion) {
-        if(this->head == this->tail){
+        if(this->size() == 1 || this->size() == 0){
             if(posicion == 0){
                 push_front(value);
             }
@@ -133,7 +137,7 @@ public:
         }
 
     void remove(int posicion) {
-        if(this->head == this->tail){
+        if(this->size() == 1 || this->size() == 0){
             if(posicion == 0){
                 pop_front();
             }

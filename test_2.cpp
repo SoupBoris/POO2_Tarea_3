@@ -12,6 +12,6 @@ TEST_CASE("Get values") {
     auto current = ll.first();
     for (size_t i = 0; i < ll.size(); ++i) {
         REQUIRE(current->value() == i);
-        current = current->next_node();
+        current = current->next();
     }
 }
