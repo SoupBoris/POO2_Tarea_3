@@ -9,11 +9,9 @@ namespace utec{
 
 
 template <typename T>
-class Node{
+struct Node{
     T data;
     Node<T>* next_n;
-
-public:
 
     void killSelf();
 
