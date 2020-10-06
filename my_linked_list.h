@@ -15,7 +15,7 @@ class Node{
 
 public:
 
-    killSelf();
+    void killSelf();
 
     Node<T>* next(){
         return this->next;
