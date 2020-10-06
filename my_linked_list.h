@@ -14,14 +14,12 @@ struct Node{
     Node<T>* next_n;
 
     Node(){ 
-        next = nullptr;
-        prev = nullptr;
+        next_n = nullptr;
         data = 0;
     }
 
     Node(T value){
-        next = nullptr;
-        prev = nullptr;
+        next_n = nullptr;
         data = value;
     }
 
