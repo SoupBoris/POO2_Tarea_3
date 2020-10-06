@@ -9,11 +9,11 @@ TEST_CASE("Traverse") {
 
     auto current = ll.first();
     REQUIRE(current->value() == 'A');
-    current = current->next();
+    current = current->next_node();
     REQUIRE(current->value() == 'B');
-    current = current->next();
+    current = current->next_node();
     REQUIRE(current->value() == 'C');
-    current = current->next();
+    current = current->next_node();
     REQUIRE(current->value() == 'D');
 
     REQUIRE(ll.size() == 4);

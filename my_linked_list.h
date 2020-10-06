@@ -17,7 +17,7 @@ public:
 
     void killSelf();
 
-    Node<T>* next(){
+    Node<T>* next_node(){
         return this->next;
     }
 
