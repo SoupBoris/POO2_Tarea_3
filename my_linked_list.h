@@ -75,6 +75,26 @@ public:
 
         return value;
         }
+
+    void push_front(T value) {
+        Node<T>* temp = new Node<T>;
+        temp->data = value;
+
+        if (this->head == nullptr){
+            temp = this->head;
+        }
+        else{
+            temp->next_n = this->head;
+            this->head = temp;
+        }
+    }
+
+    T pop_front() {
+        Node<T>* temp = this->head;
+
+        this->head = this->head->next_n;
+        temp->killSelf();
+    }
     
     T insert(T value, int posicion) {
         if(this->head == this->tail){
