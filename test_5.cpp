@@ -3,7 +3,7 @@
 //
 #include "catch.hpp"
 #include "my_linked_list.h"
-/*
+
 TEST_CASE("Traverse") {
     utec::linked_list<char> ll('A', 'B', 'C', 'D');
 
@@ -17,4 +17,4 @@ TEST_CASE("Traverse") {
     REQUIRE(current->value() == 'D');
 
     REQUIRE(ll.size() == 4);
-}*/
+}
