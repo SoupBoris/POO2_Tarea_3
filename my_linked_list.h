@@ -28,7 +28,9 @@ struct Node{
         this->data = node->data;
     }
 
-    void killSelf();
+    void killSelf(){
+        delete this;
+    }
 
     Node<T>* next(){
         return this->next_n;
@@ -90,36 +92,61 @@ public:
     
     T pop_back() {
         Node<T>* temp = this->head;
-
-        while(temp->next_n->next_n != nullptr){
+        T value;
+        
+        if(temp == nullptr){
+            return 0;
+        }
+        else if(temp->next_n == nullptr){
+            value = temp->data;
+            temp->killSelf();
+            this->head = nullptr;
+        }
+        else{
+            while(temp->next_n->next_n != nullptr){
             temp = temp->next_n;
+            }
+            value = temp->next_n->data;
+            temp->next_n->killSelf();
+            temp->next_n = nullptr;
         }
-
-        T value = temp->next_n->data;
-        temp->next_n->killSelf();
-        temp->next_n = nullptr;
-
         return value;
-        }
+    }
 
     void push_front(T value) {
         Node<T>* temp = new Node<T>;
-        temp->data = value;
+        
 
         if (this->head == nullptr){
-            temp = this->head;
+            this->head = temp;
+            temp->data = value;
         }
         else{
             temp->next_n = this->head;
+            temp->data = value;
             this->head = temp;
         }
     }
 
     T pop_front() {
         Node<T>* temp = this->head;
+        T value;
 
-        this->head = this->head->next_n;
-        temp->killSelf();
+        if(temp == nullptr){
+            return 0;
+        }
+        else if(temp->next_n == nullptr){
+            value = temp->data;
+            temp->killSelf();
+            this->head = nullptr;
+        }
+        else{
+            value = temp->data;
+            this->head = this->head->next_n;
+            temp->killSelf();
+        }
+
+        return value;        
     }
     
     T insert(T value, int posicion) {
