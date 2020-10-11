@@ -59,25 +59,34 @@ public:
     Node<T>* back() {
 
         Node<T>* temp = this->head;
-        
-        while(temp->next_n != nullptr){
-            temp = temp-> next_n;
-        }
 
+        if(this->head == nullptr){
+            return nullptr;
+        }
+        else{
+            while(temp->next_n != nullptr){
+            temp = temp-> next_n;
+            }
         return temp;
         }
+    }
 
     void push_back(T value) {
-        Node<T>* temp = this->head;
+        Node<T>* temp = new Node<T>;
 
-        while(temp->next_n != nullptr){
-            temp = temp->next_n;
+        if(this->head == nullptr){
+            temp->data = value;
+            this->head = temp;
         }
-
-        Node<T>* temp2 = new Node<T>(value);
-
-        temp->next_n = temp2;
-        }
+        else{
+            temp = this->head;
+            while(temp->next_n != nullptr){
+                temp = temp->next_n;
+            }
+            Node<T>* temp2 = new Node<T>(value);
+            temp->next_n = temp2;
+        }    
+    }
     
     T pop_back() {
         Node<T>* temp = this->head;
