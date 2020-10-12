@@ -57,15 +57,6 @@ public:
         head = nullptr;
     }
     
-    /*
-    linked_list(initializer_list<T> values){
-        for(auto it = values.begin() ; it < values.end() ; it++){
-            push_back(*it);
-        }
-    }*/
-
-
-
     template <typename ...Packet>
     linked_list(Packet... package){
         ((this->push_back(package)), ...);
