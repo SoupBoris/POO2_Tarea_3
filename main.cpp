@@ -5,18 +5,19 @@
 using namespace std;
 
 int main(){
-    utec::linked_list<float> ll;
-    ll.insert(0, 100.5f);
-    ll.insert(1, 300.6f);
-    ll.insert(1, 200.2f);
-
+    utec::linked_list<char> ll('A', 'B', 'C', 'D');
     auto current = ll.first();
+    cout << current->value() << endl;
 
-    cout << current->value() << endl;
     current = current->next();
     cout << current->value() << endl;
+
     current = current->next();
     cout << current->value() << endl;
+    
+    current = current->next();
+    cout << current->value() << endl;
+    
 }
 
 

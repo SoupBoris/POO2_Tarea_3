@@ -1,6 +1,9 @@
 //
 // Created by rudri on 9/12/2020.
 //
+#include <stdlib.h>
+#include <initializer_list>
+using namespace std;
 
 #ifndef POO2_UNIT2_WEEK_3_2020_2_MY_LINKED_LIST_H
 #define POO2_UNIT2_WEEK_3_2020_2_MY_LINKED_LIST_H
@@ -52,6 +55,20 @@ public:
 
     linked_list(){
         head = nullptr;
+    }
+    
+    /*
+    linked_list(initializer_list<T> values){
+        for(auto it = values.begin() ; it < values.end() ; it++){
+            push_back(*it);
+        }
+    }*/
+
+
+
+    template <typename ...Packet>
+    linked_list(Packet... package){
+        ((this->push_back(package)), ...);
     }
 
     Node<T>* first() {
