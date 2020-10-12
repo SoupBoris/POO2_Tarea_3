@@ -149,8 +149,8 @@ public:
         return value;        
     }
     
-    T insert(T value, int posicion) {
-        if(this->size() == 1 || this->size() == 0){
+    T insert(int posicion, T value) {
+        if(this->head == nullptr || this->head->next_n == nullptr){
             if(posicion == 0){
                 push_front(value);
             }
@@ -161,7 +161,7 @@ public:
         else
             {
             Node<T>* temp = this->head;
-            for(int i = 0; i < posicion; i++){
+            for(int i = 0; i < posicion - 1; i++){
                 temp = temp->next_n;
             }
 
